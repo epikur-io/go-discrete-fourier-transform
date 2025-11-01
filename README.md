@@ -76,3 +76,12 @@ peaks := FindMainPeaks(mag, freqRes, neighborhoodHz, threshold)
 | `amplitudes`     | Amplitudes of each sine wave             | `[1.0, 0.5, 0.8]` |
 | `neighborhoodHz` | Range for filtering side lobes (Hz)      | `3.0`             |
 | `threshold`      | Minimum magnitude for peak detection     | `0.05`            |
+
+### Example program output
+
+```
+Detected main frequencies:
+Frequency: 50.0 Hz, Magnitude: 1.000
+Frequency: 120.0 Hz, Magnitude: 0.500
+Frequency: 300.0 Hz, Magnitude: 0.800
+```
