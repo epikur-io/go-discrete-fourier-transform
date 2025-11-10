@@ -80,8 +80,20 @@ peaks := FindMainPeaks(mag, freqRes, neighborhoodHz, threshold)
 ### Example program output
 
 ```
+$ go run examples/synthetic/dft_synthetic.go
+
 Detected main frequencies:
 Frequency: 50.0 Hz, Magnitude: 1.000
 Frequency: 120.0 Hz, Magnitude: 0.500
 Frequency: 300.0 Hz, Magnitude: 0.800
+```
+
+Or for an audio file:
+
+```
+$ go run examples/audio_file/dft_audio_file.go \
+    -input my_audio_file.mp3 \
+    -duration 1 \
+    -mmt 0.001 \
+    -start 0
 ```
